@@ -25,7 +25,10 @@ const HomePage: React.FC = () => {
     setSuccess(false);
 
     try {
-      await axios.post("http://localhost:5000/api/send-phone", { name, phone });
+      await axios.post("http://31.28.27.102:5000/api/send-phone", {
+        name,
+        phone,
+      });
       setSuccess(true);
       setName("");
       setPhone("");
